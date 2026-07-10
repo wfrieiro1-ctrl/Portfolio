@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Walter Frieiro — Portfolio</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap');
+
+  :root{
+    --ink:#1c1c1c;
+    --paper:#fbfaf7;
+    --line:#d8d2c4;
+    --accent:#5b6b4f;
+    --muted:#6b675e;
+    --gold:#a9822f;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:#e9e6de;
+    font-family:'Inter',sans-serif;
+    color:var(--ink);
+    display:flex;
+    justify-content:center;
+    padding:32px 16px;
+  }
+  .page{
+    background:var(--paper);
+    width:100%;
+    max-width:820px;
+    padding:36px 56px 28px;
+    box-shadow:0 2px 24px rgba(0,0,0,0.08);
+  }
+  header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    border-bottom:3px solid var(--ink);
+    padding-bottom:12px;
+    margin-bottom:4px;
+  }
+  h1{
+    font-family:'Source Serif 4',serif;
+    font-size:29px;
+    font-weight:700;
+    margin:0;
+    letter-spacing:-0.5px;
+  }
+  .role-tag{
+    font-family:'Inter';
+    font-size:12px;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    color:var(--accent);
+    font-weight:600;
+    margin-top:6px;
+  }
+  .contact{
+    text-align:right;
+    font-size:12.5px;
+    line-height:1.7;
+    color:var(--muted);
+  }
+  .intro{
+    font-size:12px;
+    line-height:1.45;
+    color:#333;
+    margin:12px 0 16px 0;
+  }
+  section{margin-bottom:14px;}
+  h2{
+    font-family:'Inter';
+    font-size:12px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:var(--accent);
+    border-bottom:1px solid var(--line);
+    padding-bottom:4px;
+    margin:0 0 9px 0;
+  }
+  .featured{
+    background:#f2efe6;
+    border-left:3px solid var(--gold);
+    padding:10px 16px;
+    margin-bottom:10px;
+  }
+  .featured .badge{
+    font-size:10.5px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    color:var(--gold);
+    font-weight:700;
+    margin-bottom:6px;
+  }
+  .piece{margin-bottom:9px;}
+  .piece:last-child{margin-bottom:0;}
+  .piece-title{
+    font-family:'Source Serif 4',serif;
+    font-weight:700;
+    font-size:13.5px;
+    margin-bottom:2px;
+  }
+  .piece-meta{
+    font-size:10.5px;
+    color:var(--muted);
+    margin-bottom:3px;
+  }
+  .piece-desc{
+    font-size:11.5px;
+    line-height:1.4;
+    color:#333;
+    margin-bottom:3px;
+  }
+  .piece-link{
+    font-size:10.5px;
+  }
+  .piece-link a{
+    color:var(--accent);
+    text-decoration:none;
+    border-bottom:1px solid var(--line);
+  }
+  .note{
+    font-size:10.5px;
+    color:var(--muted);
+    font-style:italic;
+    margin-top:12px;
+    border-top:1px solid var(--line);
+    padding-top:8px;
+    line-height:1.4;
+  }
+  @media print{
+    body{background:white; padding:0;}
+    .page{box-shadow:none; max-width:100%; padding:40px 48px;}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <div>
+      <h1>Walter Frieiro</h1>
+      <div class="role-tag">Portfolio of journalism and content work</div>
+    </div>
+    <div class="contact">
+      wfrieiro1@gmail.com<br>
+      +34 677 515 953<br>
+      Seville, Spain
+    </div>
+  </header>
+
+  <p class="intro">
+    A selection of pieces published in elTOQUE (Cuba), where I worked as a journalist and photojournalist between 2021 and 2022. They span narrative feature writing, investigative reporting, data journalism, and interviews. All links lead to the original publication.
+  </p>
+
+  <section>
+    <h2>Featured piece</h2>
+    <div class="featured">
+      <div class="badge">Cubacrón Award 2022 — COLPIN</div>
+      <div class="piece-title">Vivir de la basura (Living off the trash)</div>
+      <div class="piece-meta">Narrative feature · Co-authored with Meilin Puertas · elTOQUE</div>
+      <div class="piece-desc">A feature on Havana's Calle 100 dump, Cuba's largest landfill, and the people who survive off it. Winner of the 2022 Cubacrón Award for the best feature piece produced in Cuba, presented at COLPIN, the region's leading journalism gathering.</div>
+      <div class="piece-link"><a href="https://eltoque.com/vivir-de-la-basura" target="_blank">eltoque.com/vivir-de-la-basura</a></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Interviews</h2>
+
+    <div class="piece">
+      <div class="piece-title">Wagner Moura: "Marighella is censored because they're afraid of it"</div>
+      <div class="piece-meta">Interview · Revista Garbos · Havana Film Festival</div>
+      <div class="piece-desc">Interview with Brazilian actor and director Wagner Moura during the Havana Film Festival, on the censorship his film "Marighella" faced in Brazil and the political backdrop behind its blocked release.</div>
+      <div class="piece-link"><a href="https://web.archive.org/web/20210104150205/https://revistagarbos.com/articulo/wagner-moura-%C2%ABla-censura-de-marighella-es-porque-le-tienen-miedo%C2%BB" target="_blank">revistagarbos.com (via web.archive.org)</a></div>
+    </div>
+
+    <div class="piece">
+      <div class="piece-title">Chino Darín: "The Havana Festival is a lovely mecca of Latin American cinema"</div>
+      <div class="piece-meta">Interview · Revista Garbos · 41st Havana Film Festival</div>
+      <div class="piece-desc">Interview with Argentine actor Chino Darín during his visit to Havana alongside his father, Ricardo Darín, to present "La odisea de los giles," the film that opened the festival's 41st edition.</div>
+      <div class="piece-link"><a href="https://web.archive.org/web/20210104153342/https://revistagarbos.com/articulo/chino-dar%C3%ADn-%C2%ABel-festival-de-la-habana-es-una-linda-meca-del-cine-latinoamericano%C2%BB" target="_blank">revistagarbos.com (via web.archive.org)</a></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Investigative & data journalism</h2>
+
+    <div class="piece">
+      <div class="piece-title">Havana Is Losing Its Green — Temporarily?</div>
+      <div class="piece-meta">Investigative feature · Co-authored with Meilin Puertas Borrero · elTOQUE</div>
+      <div class="piece-desc">An investigation into the mass felling of trees in Havana between late 2020 and 2021, based on citizen complaints and official statements.</div>
+      <div class="piece-link"><a href="https://eltoque.com/la-habana-pierde-su-verde-temporalmente" target="_blank">eltoque.com/la-habana-pierde-su-verde-temporalmente</a></div>
+    </div>
+
+    <div class="piece">
+      <div class="piece-title">Taxi Agencies via WhatsApp and Telegram in Cuba: A Growing Business?</div>
+      <div class="piece-meta">Investigative feature · Co-authored with Meilin Puertas Borrero · elTOQUE</div>
+      <div class="piece-desc">An analysis of the rise of informal taxi agencies run through messaging apps in Cuba, in the context of expanding 3G/4G mobile access.</div>
+      <div class="piece-link"><a href="https://eltoque.com/agencias-de-taxi-whatsapp-telegram-cuba-negocio-auge" target="_blank">eltoque.com/agencias-de-taxi-whatsapp-telegram-cuba-negocio-auge</a></div>
+    </div>
+
+    <div class="piece">
+      <div class="piece-title">Local Development in Cuba: An Opportunity for Entrepreneurship?</div>
+      <div class="piece-meta">Economic feature · elTOQUE · September 2021</div>
+      <div class="piece-desc">A feature on Cuba's local development projects (PDLs) following Decree 33 of 2021, with interviews of entrepreneurs and territorial policy specialists.</div>
+      <div class="piece-link"><a href="https://eltoque.com/desarrollo-local-cuba-oportunidad-emprendimiento" target="_blank">eltoque.com/desarrollo-local-cuba-oportunidad-emprendimiento</a></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Current affairs & urban features</h2>
+
+    <div class="piece">
+      <div class="piece-title">COVID-19 in Cuba: The Abnormal Within the New Normal</div>
+      <div class="piece-meta">Current-affairs feature · elTOQUE</div>
+      <div class="piece-desc">A look at the social and everyday changes in Cuba nearly two years after the pandemic hit, from shortages to the reopening of borders.</div>
+      <div class="piece-link"><a href="https://eltoque.com/covid-19-en-cuba-lo-anormal-en-la-nueva-normalidad" target="_blank">eltoque.com/covid-19-en-cuba-lo-anormal-en-la-nueva-normalidad</a></div>
+    </div>
+
+    <div class="piece">
+      <div class="piece-title">The Ruins of Leisure in Cuba</div>
+      <div class="piece-meta">Feature + photojournalism · Original photos and collage · elTOQUE</div>
+      <div class="piece-desc">A feature on the decline of cultural and leisure spaces in Havana, including an original survey of 377 people on the state of the country's cultural and recreational offerings.</div>
+      <div class="piece-link"><a href="https://eltoque.com/las-ruinas-del-ocio-en-cuba" target="_blank">eltoque.com/las-ruinas-del-ocio-en-cuba</a></div>
+    </div>
+
+    <div class="piece">
+      <div class="piece-title">Neither Cabaret Nor Restaurant: The Moscú Will Become Another Hotel in Havana</div>
+      <div class="piece-meta">Feature + original photography · elTOQUE</div>
+      <div class="piece-desc">The history and present state of the former Montmartre cabaret / Moscú restaurant in El Vedado, now in ruins, and its planned transformation into a hotel.</div>
+      <div class="piece-link"><a href="https://eltoque.com/ni-cabaret-ni-restaurante-el-moscu-sera-otro-hotel-en-la-habana" target="_blank">eltoque.com/ni-cabaret-ni-restaurante-el-moscu-sera-otro-hotel-en-la-habana</a></div>
+    </div>
+
+    <div class="piece">
+      <div class="piece-title">Cuba's History at the Olympic Games</div>
+      <div class="piece-meta">Sports feature · elTOQUE · July 2021</div>
+      <div class="piece-desc">A historical overview of Cuban participation in the Olympic Games from its founding through Tokyo 2020, focused on standout results and notable absences.</div>
+      <div class="piece-link"><a href="https://eltoque.com/historia-de-cuba-en-los-juegos-olimpicos" target="_blank">eltoque.com/historia-de-cuba-en-los-juegos-olimpicos</a></div>
+    </div>
+  </section>
+
+  <div class="note">
+    All pieces were originally published in elTOQUE (2021–2022). For further work, including radio contributions at Nexos Radio, Radio Progreso, and Habana Radio, and more recent copywriting and digital marketing projects, available on request.
+  </div>
+
+</div>
+</body>
+</html>
